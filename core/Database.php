@@ -29,7 +29,7 @@ class Database
         // Si aucune connexion n'existe encore, on l'initialise
         if (!self::$pdo) {
             // Paramètres de connexion
-            $dsn = "mysql:host={$_ENV['DB_HOST']};port={$_ENV['DB_PORT']};dbname{$_ENV['DB_NAME']};charset=utf8mb4";
+            $dsn = "mysql:host={$_ENV['DB_HOST']};port={$_ENV['DB_PORT']};dbname={$_ENV['DB_NAME']};charset=utf8mb4";
             $user = $_ENV['DB_USER'];
             $pass = $_ENV['DB_PASSWORD'];
 
